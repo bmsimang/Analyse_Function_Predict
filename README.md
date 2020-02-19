@@ -85,6 +85,3 @@ sudo pip install  https://github.com/bmsimang/Analyse_Function_Predict.git
 * [Vinita Maharaj](https://github.com/vinita-maharaj)
 * [Shraddha Rajcoomar](https://github.com/ShraddhaRajcoomar13) 
 * [Azukile Kobe](https://github.com/azukilekobe) 
-
-
-
