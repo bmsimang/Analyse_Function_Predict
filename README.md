@@ -77,6 +77,8 @@ You will need to run the install via sudo:
 ```bash
 sudo pip install git+https://github.com/bmsimang/Analyse_Function_Predict.git
 ```
+## License
+This project is licensed under the MIT License.
 
 ## Authors
 
