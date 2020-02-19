@@ -63,7 +63,7 @@ a list or a pandas dataframe.
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install predict_function_package.
 
 ```bash
-pip install --upgrade git+https://github.com/bmsimang/Analyse_Function_Predict.git
+pip install git+https://github.com/bmsimang/Analyse_Function_Predict.git
 ```
 
 If you get an error when running that command, and it contains this line somewhere in it:
@@ -75,7 +75,7 @@ pip ERR! Please try running this command again as root/Administrator.
 You will need to run the install via sudo:
 
 ```bash
-sudo pip install --upgrade git+https://github.com/bmsimang/Analyse_Function_Predict.git
+sudo pip install git+https://github.com/bmsimang/Analyse_Function_Predict.git
 ```
 
 ## Authors
