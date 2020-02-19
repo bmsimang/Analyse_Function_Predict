@@ -87,3 +87,6 @@ This project is licensed under the MIT License.
 * [Vinita Maharaj](https://github.com/vinita-maharaj)
 * [Shraddha Rajcoomar](https://github.com/ShraddhaRajcoomar13) 
 * [Azukile Kobe](https://github.com/azukilekobe) 
+
+## License
+This project is licensed under the MIT License.
