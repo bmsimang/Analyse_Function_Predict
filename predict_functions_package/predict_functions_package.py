@@ -14,6 +14,7 @@ def dictionary_of_metrics(items):
     return {'mean': round(list_mean, 2), 'median': round(list_median, 2),
             'var': round(list_var, 2), 'std': round(list_std, 2),
             'min': round(list_min, 2), 'max': round(list_max, 2)}
+            
 ###
 def five_num_summary(items):
     list_conv = np.array(items)
@@ -30,6 +31,15 @@ def date_parser(dates):
 
 ###
 def extract_municipality_hashtags(df):
+
+    mun_dict = { '@CityofCTAlerts' : 'Cape Town',
+            '@CityPowerJhb' : 'Johannesburg',
+            '@eThekwiniM' : 'eThekwini' ,
+            '@EMMInfo' : 'Ekurhuleni',
+            '@centlecutility' : 'Mangaung',
+            '@NMBmunicipality' : 'Nelson Mandela Bay',
+            '@CityTshwane' : 'Tshwane'}
+
     df["Tweets"] = [x.lower() for x in df["Tweets"]]
     df['municipality'] = df['Tweets'].map(mun_dict)
     df['hashtags'] = df['Tweets'].str.findall(r'#.*?(?=\s|$)')
@@ -48,3 +58,10 @@ def word_splitter(df):
     df["Split Tweets"] = [i.split() for i in df["Split Tweets"]]
     return df
     pass
+
+###
+def stop_words_remover(df):
+    df["Without Stop Words"] = [x.lower() for x in df["Tweets"]]
+    df["Without Stop Words"] = [i.split() for i in df["Without Stop Words"]]
+    return df
+    pass 
