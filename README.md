@@ -13,7 +13,7 @@ a list or a pandas dataframe.
 - The function returns a dictionary('dict') with keys 'mean', 'median', 'std', 'var', 'min', and 'max' corresponding to the mean, median, standard deviation, variance, minimum and maximum respectively. Numpy functions are used for calculations.
 - All numerical values are rounded to two decimal places.
 
-<b> Five_num_summary </b> <br/>
+<b> Five_number_summary </b> <br/>
 - The function takes a list as an input.
 - The function should return a dictionary('dict') with keys 'max', 'median', 'min', 'q1', and 'q3' corresponding to the maximum, median, minimum, first quartile and third quartile, respectively. Numpy functions are used for calculations.
 - All numerical values are rounded to two decimal places. 
