@@ -78,5 +78,13 @@ You will need to run the install via sudo:
 sudo pip install  https://github.com/bmsimang/Analyse_Function_Predict.git
 ```
 
+## Authors
+
+* [Bongani Msimanga](https://github.com/bmsimang)
+* [Akshar Jadoonandan](https://github.com/AksharJ47)
+* [Vinita Maharaj](https://github.com/vinita-maharaj)
+* [Shraddha Rajcoomar](https://github.com/ShraddhaRajcoomar13) 
+* [Azukile Kobe](https://github.com/azukilekobe) 
+
 
 
