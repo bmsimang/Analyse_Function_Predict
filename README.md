@@ -2,59 +2,61 @@
 
 # Predict Functions Package
 
-A package of python functions which take in a list or a pandas dataframe and returns either a dictionary
-or a list. The second set of functions take in text data as either a list or as a dataframe and returns
-a list or or pandas dataframe
+A package of python functions which takes in a list or a pandas dataframe and returns either a dictionary
+or a list. The second set of functions takes in text data as either a list or as a dataframe and returns
+a list or a pandas dataframe.
 
 ## List of Functions in the package and specifications:
 
 <b> Dictionary_of_metrics </b> <br/>
-- The function should take a list as input.
-- The function should return a `dict` with keys `'max'`, `'median'`, `'min'`, `'q1'`, and `'q3'` corresponding to the maximum, median, minimum, first quartile and third quartile, respectively. You may use numpy functions to aid in your calculations.
-- All numerical values should be rounded to two decimal places.
+- The function takes a list as an input.
+- The function returns a dictionary('dict') with keys 'mean', 'median', 'std', 'var', 'min', and 'max' corresponding to the mean, median, standard deviation, variance, minimum and maximum respectively. Numpy functions are used for calculations.
+- All numerical values are rounded to two decimal places.
 
 <b> Five_num_summary </b> <br/>
-- The function should take a list as input.
-- The function should return a `dict` with keys `'max'`, `'median'`, `'min'`, `'q1'`, and `'q3'` corresponding to the maximum, median, minimum, first quartile and third quartile, respectively. You may use numpy functions to aid in your calculations.
-- All numerical values should be rounded to two decimal places. 
+- The function takes a list as an input.
+- The function should return a dictionary('dict') with keys 'max', 'median', 'min', 'q1', and 'q3' corresponding to the maximum, median, minimum, first quartile and third quartile, respectively. Numpy functions are used for calculations.
+- All numerical values are rounded to two decimal places. 
   
 <b> Date_parser </b> <br/>
-- The function should take a list of strings as input.
+- The function takes a list of strings as an input.
 - Each string in the input list is formatted as 'yyyy-mm-dd hh:mm:ss'.
-- The function should return a list of strings where each element in the returned list contains only the date in the 'yyyy-mm-dd' format.
+- The function returns a list of strings where each element in the returned list contains only the date in the 'yyyy-mm-dd' format.
 
 <b> Municipality & Hashtag Detector </b> <br/>
-- Function should take a pandas dataframe as input.
-- Extract the municipality from a tweet using the mun_dict dictonary given below, and insert the result into a new column named 'municipality' in the same dataframe.
-- Use the entry np.nan when a municipality is not found.
-- Extract a list of hashtags from a tweet into a new column named 'hashtags' in the same dataframe.
-- Use the entry np.nan when no hashtags are found.
+- The function takes a pandas dataframe as an input.
+- The municipality is extracted from the tweets using the mun_dict dictonary, and the result is inserted into a new column named 'municipality' in the same dataframe.
+- When a municipality is not found, the entry np.nan is used.
+- A list of hashtags from tweets are extracted into a new column named 'hashtags' in the same dataframe.
+- When a hashtag is not found, the entry np.nan is used.
 
 <b> Number_of_tweets_per_day </b> <br/>
-- It should take a pandas dataframe as input.
-- It should return a new dataframe, grouped by day, with the number of tweets for that day.
-- The index of the new dataframe should be named Date, and the column of the new dataframe should be 'Tweets', corresponding to the date and number of tweets, respectively.
-- The date should be formated as yyyy-mm-dd, and should be a datetime object. Hint: look up pd.to_datetime to see how to do this.
+- The function takes a pandas dataframe as an input.
+- The function returns a new dataframe, grouped by day, with the number of tweets for that day.
+- The index of the new dataframe is named 'Date', and the column of the new dataframe is named 'Tweets', corresponding to the date and number of tweets, respectively.
+- The date is formatted as yyyy-mm-dd, and is a datetime object.
 
 <b> Word_splitter </b> <br/>
-- It should take a pandas dataframe as an input.
+- The function takes a pandas dataframe as an input.
 - The dataframe should contain a column, named 'Tweets'.
-- The function should split the sentences in the 'Tweets' into a list of seperate words, and place the result into a new column named 'Split Tweets'. The resulting words must all be lowercase!
-- The function should modify the input dataframe directly.
-- The function should return the modified dataframe.
+- The function splits the sentences in the 'Tweets' into a list of seperate words, and places the result into a new column named 'Split Tweets'. The resulting words are all lowercase.
+- The function modifies the input dataframe directly.
+- The function returns the modified dataframe.
 
 <b> Stop_words_remover </b> <br/>
-- It should take a pandas dataframe as input.
-- Should tokenise the sentences according to the definition in function 6. Note that function 6 cannot be called within this function.
-- Should remove all stop words in the tokenised list. The stopwords are defined in the stop_words_dict variable defined at the top of this notebook.
-- The resulting tokenised list should be placed in a column named "Without Stop Words".
-- The function should modify the input dataframe.
-- The function should return the modified dataframe.
+- The function takes a pandas dataframe as an input.
+- The function tokenises the sentences according to the definition in function 6.
+- The function removes all stop words in the tokenised list. The stopwords are defined in the stop_words_dict variable.
+- The resulting tokenised list is placed in a column named "Without Stop Words".
+- The function modifies the input dataframe.
+- The function returns the modified dataframe.
 
 ## Prequisites
-- Python 2.7 or later
-- Pip package installer
-- Bash
+- Python 2.7 or later.
+- Pip package installer.
+- Bash.
+- Numpy.
+- Pandas.
 
 ## Installation
 
